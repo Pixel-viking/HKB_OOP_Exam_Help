@@ -5,7 +5,7 @@ public class Main {
         try {
             System.out.println(databaseConnector.getConnection());
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         } finally {
             System.out.println("Connection closed");
         }

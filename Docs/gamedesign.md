@@ -72,7 +72,7 @@ To persist game state (players, units, positions) and load/save configurations, 
 * **Schema Suggestions:**
 
     * **players**: `(player_id, name, is_ai, turn_order)`
-    * **units**: `(unit_id, player_id, type, health, pos_x, pos_y, last_updated_turn)`
+    * **units**: `(unit_id, player_id, type, health, last_updated_turn)`
     * **game\_state**: `(state_id, current_turn, status, last_saved)`
 
 ---
