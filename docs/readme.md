@@ -5,7 +5,7 @@
 
 Målet med dette programmet er at spilleren kjemper mot en liste med monstre, hvor skaden spiller gjør og skaden monsteret gjør er tilfeldig.
 
-Oppgaven går ut på å implementere ferdig slik at spillet kjører sin gang. Spillet kjører hele veien igjennom med hardkodede monstre og igjen bruker interaksjon, du skal modifisere programmet slik at det venter på input fra brukeren før en battle finner sted. Implementer også en database som du henter mosnter informasjon fra. Legg tre tilfeldige monstre og et Boss monster i "monsters" arraylisten.
+Oppgaven går ut på å implementere ferdig slik at spillet kjører sin gang. Spillet kjører hele veien igjennom med hardkodede monstre og ingen bruker interaksjon, du skal modifisere programmet slik at det venter på input fra brukeren før en battle finner sted. Implementer også en database som du henter mosnter informasjon fra. Legg tre tilfeldige monstre og et Boss monster i "monsters" arraylisten.
 
 Bonus: Om du ønsker kan du også implementere en "gamestate" som gjør det mulig å pause/avslutte spillet og komme tilbake til samme punkt når du starter programmet igjen.
 
