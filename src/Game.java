@@ -22,7 +22,7 @@ public class Game
             if (battle.getCurrentMonster().isDead()) {
                 monsters.remove(0);
             }
-        } while (this.getMonstersLeft() > 0 && this.getPlayer().isDead());
+        } while (this.getMonstersLeft() > 0 && !this.getPlayer().isDead());
     }
 
 

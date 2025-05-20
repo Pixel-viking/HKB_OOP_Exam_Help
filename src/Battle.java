@@ -30,13 +30,13 @@ public class Battle
         while (true) {
             int playerDamage = this.getPlayer().getDamage();
             int monsterDamage = this.getCurrentMonster().getDamage();
-            System.out.println("Player did " + playerDamage + " to Monster");
+            System.out.println(this.getPlayer().name +" did " + playerDamage + " to " + this.getCurrentMonster().name);
             if (this.getCurrentMonster().damage(playerDamage)) {
                 this.getCurrentMonster().entityDead();
                 break;
             }
 
-            System.out.println("Monster did " + playerDamage + " to Player");
+            System.out.println(this.getCurrentMonster().name + " did " + playerDamage + " to " + this.getPlayer().name);
             if (this.getPlayer().damage(monsterDamage)) {
                 this.getPlayer().entityDead();
                 break;

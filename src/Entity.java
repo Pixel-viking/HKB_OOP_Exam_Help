@@ -1,13 +1,15 @@
 public abstract class Entity
 {
     //# Fields
+    public String name;
     private int health;
     private int damageMin;
     private int damageMax;
 
 
     //# Constructors
-    Entity(int health, int damageMin, int damageMax) {
+    Entity(int health, int damageMin, int damageMax, String name) {
+        this.name = name;
         this.health = health;
         this.damageMin = damageMin;
         this.damageMax = damageMax;
@@ -42,7 +44,7 @@ public abstract class Entity
     }
 
     public boolean isDead() {
-        return this.getHealth() > 0;
+        return this.getHealth() <= 0;
     }
 
     void entityDead() {
