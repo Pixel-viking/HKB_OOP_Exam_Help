@@ -1,14 +1,18 @@
-public class Main {
+import java.util.ArrayList;
+
+public class Main
+{
     public static void main(String[] args) {
-        DatabaseConnector databaseConnector = new DatabaseConnector();
+        Player player = new Player(100, 8, 16);
 
-        try {
-            System.out.println(databaseConnector.getConnection());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        } finally {
-            System.out.println("Connection closed");
-        }
+        ArrayList<Monster> monsters = new ArrayList<>();
+
+        monsters.add(new Monster(20, 2, 5));
+        monsters.add(new Monster(35, 4, 9));
+        monsters.add(new Boss(64, 7, 15));
+
+        Game game = new Game(player, monsters);
+
+        game.start();
     }
-
 }
