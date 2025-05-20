@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class GameState {
+    /*
     private int currentTurn;
     private final ArrayList<Player> players;
     private final ArrayList<Unit> units;
@@ -33,4 +34,6 @@ public class GameState {
     public ArrayList<Unit> getUnits() {
         return units;
     }
+
+     */
 }

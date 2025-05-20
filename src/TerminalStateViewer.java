@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class TerminalStateViewer {
+    /*
     private GameState gameState;
     private final Scanner scanner = new Scanner(System.in);
 
@@ -27,5 +28,7 @@ public class TerminalStateViewer {
         }
         System.out.println();
     }
+
+     */
 
 }

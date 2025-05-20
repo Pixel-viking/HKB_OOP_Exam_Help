@@ -16,11 +16,13 @@ public class Game
 
 
     void start() {
-        //# Start the game
-
-        // The player battles against the monsters until:
-        // - all monsters have dies
-        // - or the player dies
+        do {
+            battle.setMonster(monsters.getFirst());
+            battle.runBattle();
+            if (battle.getCurrentMonster().isDead()) {
+                monsters.remove(0);
+            }
+        } while (this.getMonstersLeft() > 0 && this.getPlayer().isDead());
     }
 
 
